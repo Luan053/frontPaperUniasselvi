@@ -1,7 +1,10 @@
-export const App = () => {
+import { RouterProvider } from 'react-router-dom'
+import Routes from './routes'
+
+export function App() {
   return (
-    <div className='h-screen w-screen bg-slate-900'>
-      <h1 className='text-gray-100'>Hello World!</h1>
-    </div>
+    <>
+      <RouterProvider router={Routes()} />
+    </>
   )
 }
